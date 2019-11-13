@@ -8,10 +8,27 @@ body {
 #b1, #b2{
     background-color: dodgerblue;
     width: 80px;
-    vertical-align: top;
+    
     margin-top: 90px;
+
+    
+        display:block!important;
+        -webkit-transition: 3s ease-out;
+        -moz-transition:1s ease-out;
+        -o-transition: 1s ease-out;
+        -ms-transition:1s ease-out;
+        transition: 1s ease-out;
 }
+        #b1:hover{
+        -moz-transform: scale(2.2);
+        -webkit-transform: scale(2.2);
+        -o-transform: scale(2.2);
+        -ms-transform: scale(2.2);
+        transform: scale(2.2)
+        }
+
 
 img {
     width: 300px;
 }
+
