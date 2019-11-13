@@ -1,6 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#container{
+    margin-left: 33%;
+}
+
 #b1, #b2{
     background-color: dodgerblue;
     width: 80px;
+    vertical-align: top;
+    margin-top: 90px;
 }
 
 img {
