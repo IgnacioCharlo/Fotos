@@ -2,25 +2,32 @@ body {
     font-family: Arial, sans-serif;
 }
 #container{
-    position: relative;
-    display: flex;
     justify-content: center;
+    display: flex;
     align-items: center;
 }
 
 #b1, #b2{
-    background-color: dodgerblue;
+    background-color: #005fff;
     width: 80px;
     height: 25px;
     border: none;
     margin: 10px;
     transition: 0.3s ease-out;
+    color: white;
 }
         #b1:hover, #b2:hover{
-            background-color: coral;
+            background-color: #ff5821;
             height: 40px;
         }
-
+    #b1:disabled, #b2:disabled {
+        color: #c7c7c7;
+        background-color: #005fff;
+        height: 25px;
+    }
+        #b1:disabled:hover, #b2:disabled:hover{
+            background-color: #575757;
+        }
 
 img {
     width: 300px;
