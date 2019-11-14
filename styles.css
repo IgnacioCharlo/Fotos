@@ -14,7 +14,7 @@ body {
     height: 25px;
     border: none;
     margin: 10px;
-        transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
 }
         #b1:hover, #b2:hover{
             background-color: coral;
@@ -24,5 +24,6 @@ body {
 
 img {
     width: 300px;
+    height: 220px;
 }
 
