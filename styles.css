@@ -11,18 +11,15 @@ body {
 #b1, #b2{
     background-color: dodgerblue;
     width: 80px;
+    height: 25px;
     border: none;
-    transition: 0.5s ease-out;
+    margin: 10px;
+        transition: 0.3s ease-out;
 }
-#b1:hover, #b2:hover{
-    background-color: coral;
-    transform: scaleX(0.8) scaleY(2.0);
-}
-
-#b1:disabled{
-    background-color: green;
-
-}
+        #b1:hover, #b2:hover{
+            background-color: coral;
+            height: 40px;
+        }
 
 
 img {
