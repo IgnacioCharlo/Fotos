@@ -1,52 +1,66 @@
 var img=document.getElementById('pic');
-var inputbutton=document.getElementById('b1');
-var inputbutton=document.getElementById('b2');
 var buttonPrevious = document.getElementById("b1");
-buttonPrevious.addEventListener('click', event=> {
-    disable_if_bound(0);
-});
-
 var buttonNext = document.getElementById("b2");
-buttonNext.addEventListener('click', event=> {
-    disable_if_bound(1);
+var count = 1;
+
+
+buttonPrevious.addEventListener('click', event=> {
+    prev();
+    
 });
 
-function disable_if_bound (direccion){
-    if(direccion === 1){
-        if(count === 5){
-            document.getElementById("b1");
-            inputbutton.disabled=false;
-            console.log(count);
+
+buttonNext.addEventListener('click', event=> {
+   next(); 
+   
+});
+
+function next() {
+
+    count++;
+    buttonPrevious.disabled = false;
+    if(count <= 5){
+        currentPhoto(count);
+        if(count===5){
+            disable_if_bound();
         }
-        else movePhoto(direccion);
     }
-    else{
-        if (count === 1){
-            document.getElementById("b1");
-            inputbutton.disabled= false;
-            console.log(count);
+    
+}
+
+function prev() {
+    count--;
+    buttonNext.disabled = false;
+    if(count >= 1){
+        currentPhoto(count);
+        if(count===1){
+        disable_if_bound();
         }
-        else movePhoto(direccion);
+    }
+    
+}
+
+function disable_if_bound (){
+    
+    if(count === 1){
+        buttonPrevious.disabled = true;
+    }
+    else if(count === 5){
+        buttonNext.disabled = true;
     }
 }
 
 //Direccion = 1 --> NEXT
 //Direccion = 0 --> PREVIOUS
-count =1;
+
 console.log("Fuera de la funcion, count =  " + count);
-function movePhoto (direccion) {
+function currentPhoto (number) {
     console.log("Dentro de la funcion, count =  " + count);
-    var img=document.getElementById('pic');
-    if(direccion == 1){
-        count++; 
-        img.src='cros'+count+'.jpeg';    
-    }
-    else if (direccion == 0){
-        count--;
-        img.src='cros'+count+'.jpeg';
-    }
-    else{
-        console.log("ERROR con count");
-    }
+    console.log("dir:"+number);
+    
+    
+        img.src='cros'+count+'.jpeg';  
+        
+    
 }
 
