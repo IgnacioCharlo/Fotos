@@ -1,11 +1,12 @@
 var img=document.getElementById('pic');
-var buttonPrevious = document.getElementById("b1");
-var buttonNext = document.getElementById("b2");
 var count = 1;
 
+var buttonPrevious = document.getElementById("b1");
 buttonPrevious.addEventListener('click', event=> {
     prev();
 });
+
+var buttonNext = document.getElementById("b2");
 buttonNext.addEventListener('click', event=> {
    next();
 });

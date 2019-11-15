@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 #container{
     justify-content: center;
     display: flex;
@@ -16,18 +17,21 @@ body {
     transition: 0.3s ease-out;
     color: white;
 }
-        #b1:hover, #b2:hover{
-            background-color: #ff5821;
-            height: 40px;
-        }
-    #b1:disabled, #b2:disabled {
-        color: #c7c7c7;
-        background-color: #005fff;
-        height: 25px;
-    }
-        #b1:disabled:hover, #b2:disabled:hover{
-            background-color: #575757;
-        }
+
+#b1:hover, #b2:hover{
+    background-color: #ff5821;
+    height: 40px;
+}
+
+#b1:disabled, #b2:disabled {
+    color: #c7c7c7;
+    background-color: #005fff;
+    height: 25px;
+}
+
+#b1:disabled:hover, #b2:disabled:hover{
+    background-color: #575757;
+}
 
 img {
     width: 300px;
